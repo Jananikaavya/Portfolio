@@ -7,9 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const educationData = [
   // Replace these with your real education items
-  { year: "2022 – 2025", title: "B.Sc Computer Science", place: "Your College Name" },
-  { year: "2020 – 2022", title: "HSC – Computer Science", place: "Your Higher Secondary School" },
-  { year: "2018 – 2020", title: "SSLC", place: "Your School Name" },
+  { year: "2022 – 2026", title: "B.E Computer Science & Engineering", place: "Jaya Engineering College" },
+  { year: "2020 – 2022", title: "HSC", place: "Sudharsanam Vidyaashram CBSE School" },
+  { year: "2018 – 2020", title: "SSLc", place: "Sudharsanam Vidyaashram CBSE School" },
 ];
 
 const skillsData = [
@@ -19,6 +19,8 @@ const skillsData = [
   { name: "React", percent: 85 },
   { name: "Node.js", percent: 70 },
   { name: "SQL", percent: 72 },
+   { name: "Python", percent: 92 },
+    { name: "MERAN Stack", percent: 98},
 ];
 
 export default function About() {

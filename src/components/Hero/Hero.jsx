@@ -1,59 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./Hero.css";
 import TextType from "../TextType.jsx";
 
-
 export default function Hero() {
-  const cursorRef = useRef(null); // Splash cursor container
-
-  // Splash cursor effect (works on mouse + touch)
-  useEffect(() => {
-    const container = cursorRef.current;
-    if (!container) return;
-
-    const createSplash = (x, y) => {
-      const splash = document.createElement("div");
-      splash.className = "splash";
-      splash.style.left = `${x}px`;
-      splash.style.top = `${y}px`;
-      container.appendChild(splash);
-
-      splash.animate(
-        [
-          { transform: "scale(0)", opacity: 1 },
-          { transform: "scale(1.5)", opacity: 0 },
-        ],
-        { duration: 500, easing: "ease-out" }
-      );
-
-      setTimeout(() => splash.remove(), 500);
-    };
-
-    const handleMouseMove = (e) => createSplash(e.clientX, e.clientY);
-    const handleTouchMove = (e) => {
-      for (let touch of e.touches) {
-        createSplash(touch.clientX, touch.clientY);
-      }
-    };
-
-    container.addEventListener("mousemove", handleMouseMove);
-    container.addEventListener("touchmove", handleTouchMove);
-
-    return () => {
-      container.removeEventListener("mousemove", handleMouseMove);
-      container.removeEventListener("touchmove", handleTouchMove);
-    };
-  }, []);
+  // Add a console log to see if component renders multiple times
+  console.log("Hero component rendered");
 
   return (
-    <section id="home" className="hero" ref={cursorRef}>
+    <section id="home" className="hero">
       <div className="hero-container">
         {/* LEFT CONTENT */}
         <div className="hero-left">
           <div className="hero-content">
             <h1 className="intro-heading">I AM JANANI</h1>
-           
 
             <h2 className="hero-title">
               <TextType
@@ -88,13 +48,14 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* Social Links */}
-            <div className="social-links">
+            {/* Social Links - with unique test ID */}
+            <div className="links">
               <a
                 href="https://github.com/jananikaavya"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
+                data-social="github"
               >
                 <FaGithub />
               </a>
@@ -103,10 +64,15 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
+                data-social="linkedin"
               >
                 <FaLinkedin />
               </a>
-              <a href="mailto:jananikaavya1104@gmail.com" aria-label="Email">
+              <a 
+                href="mailto:jananikaavya1104@gmail.com" 
+                aria-label="Email"
+                data-social="email"
+              >
                 <FaEnvelope />
               </a>
             </div>
@@ -118,13 +84,16 @@ export default function Hero() {
           <div className="profile-container">
             <div className="square-frame">
               <div className="profile-image">
-                <img src="/avatar.png" alt="Janani - Full Stack Developer" className="floating-img" />
+                <img 
+                  src="/avatar.png" 
+                  alt="Janani - Full Stack Developer" 
+                  className="floating-img" 
+                />
               </div>
             </div>
           </div>
         </div>
-        </div>
-     
+      </div>
     </section>
   );
 }

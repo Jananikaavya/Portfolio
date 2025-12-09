@@ -47,14 +47,14 @@ const Contact = () => {
         {/* Left Side - Info */}
         <div className="contact-info">
           <h3>📬 Contact Information</h3>
-          <p><strong>Email:</strong> yourname@example.com</p>
-          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> jan.devcodes@gmail.com</p>
+          <p><strong>Phone:</strong> +91 7200328633</p>
           <p><strong>Location:</strong> Chennai, India</p>
 
           <div className="social-links">
-            <a href="https://github.com/jananikaavya" target="_blank" rel="noreferrer">🌐 GitHub</a>
-            <a href="https://www.linkedin.com/in/janucodegirl/" target="_blank" rel="noreferrer">💼 LinkedIn</a>
-            <a href="https://x.com/JananiKaavya" target="_blank" rel="noreferrer">🐦 Twitter</a>
+            <a href="https://github.com/jananikaavya" target="_blank" rel="noreferrer"></a>
+            <a href="https://www.linkedin.com/in/janucodegirl/" target="_blank" rel="noreferrer"></a>
+            <a href="https://x.com/JananiKaavya" target="_blank" rel="noreferrer"></a>
           </div>
         </div>
 

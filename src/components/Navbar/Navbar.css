@@ -185,3 +185,105 @@
   font-weight: 700;
   color: #fff;
 }
+/* ============================================
+   RESUME BUTTON (Desktop + Mobile)
+============================================ */
+
+.resume-btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.resume-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4),
+              0 4px 15px rgba(0, 0, 0, 0.4);
+  color: #fbbf24;
+  transform: translateY(-3px);
+}
+
+/* Mobile resume button */
+.mobile-socials .resume-btn {
+  padding: 12px 24px;
+  text-align: center;
+  width: 160px;
+}
+
+/* ============================================
+   RESUME BUTTON (Desktop + Mobile Behavior)
+============================================== */
+
+/* Desktop Resume Button (default: visible) */
+.resume-btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.resume-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4),
+              0 4px 15px rgba(0, 0, 0, 0.4);
+  color: #fbbf24;
+  transform: translateY(-3px);
+}
+
+/* Resume button inside mobile menu (bigger) */
+.mobile-resume-btn {
+  padding: 12px 24px;
+  width: 160px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.mobile-resume-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fbbf24;
+}
+
+/* ============================================
+   RESPONSIVE BEHAVIOR
+   Hide resume button on small screens
+============================================== */
+@media (max-width: 900px) {
+  /* Hide desktop resume button */
+  .resume-btn {
+    display: none;
+  }
+
+  /* Show mobile menu resume button */
+  .mobile-resume-btn {
+    display: block;
+  }
+}
+
+/* Default: hide mobile resume button on large screens */
+.mobile-resume-btn {
+  display: none;
+}
