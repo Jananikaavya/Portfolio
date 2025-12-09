@@ -227,7 +227,7 @@ export default function About() {
           </div>
 
           <div className="edu-card">
-            <p className="edu-year">{edu.year}</p>
+            <p className="edu-year">2022{edu.year}</p>
             <h4 className="edu-course">{edu.title}</h4>
             <p className="edu-place">{edu.place}</p>
           </div>
