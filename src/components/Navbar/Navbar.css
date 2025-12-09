@@ -7,7 +7,6 @@
   width: 100%;
   z-index: 999;
   background: rgba(0, 0, 0, 0.6);
-  
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
 }
@@ -186,4 +185,3 @@
   font-weight: 700;
   color: #fff;
 }
-

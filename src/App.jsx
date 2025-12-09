@@ -8,8 +8,10 @@ import Projects from "./components/Projects/Projects";
 import Contact from'./components/Contact/Contact';
 import './App.css'
 import Certificates from "./components/Certificates/Certificates";
+import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
+    
     <div>
       {/* Decorative bubbles */}
       <div className="bubble"></div>
@@ -18,6 +20,7 @@ const App = () => {
       <div className="bubble"></div>
 
       {/* Always visible components */}
+      
       <Navbar />
       <SplashCursor />
 
@@ -29,6 +32,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
          <Route path="/certificates" element={<Certificates/>} />
       </Routes>
+      <Footer />
     </div>
   );
 };

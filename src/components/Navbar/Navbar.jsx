@@ -48,32 +48,15 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Social Icons */}
+        {/* Resume Button (replaces social icons) */}
         <div className="social-icons">
           <a
-            href="https://github.com/jananikaavya"
+            href="/JananiK Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon"
+            className="btn resume-btn"
           >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/janucodegirl/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-           
-            <a
-            href="jan.devcodes@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon"
-          >
-            <FontAwesomeIcon icon={faEnvelope} />
+            Resume
           </a>
         </div>
 
@@ -102,34 +85,16 @@ export default function Navbar() {
           </ul>
           <div className="mobile-socials">
             <a
-              href="https://github.com/jananikaavya"
+              href="/JananiK Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="icon"
+              className="btn resume-btn"
             >
-              <FontAwesomeIcon icon={faGithub} />
+              Resume
             </a>
-            <a
-              href="https://linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="icon"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            
-            <a
-            href="jananikaavya1104@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon"
-          >
-            <FontAwesomeIcon icon={faEnvelope} />
-          </a>
           </div>
         </div>
       )}
     </nav>
   );
 }
-
