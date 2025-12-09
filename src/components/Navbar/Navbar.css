@@ -92,7 +92,7 @@
 
 /* Mobile Dropdown */
 .mobile-dropdown {
-  display: none;
+ 
   flex-direction: column;
   align-items: center;
   padding: 1rem;
@@ -272,14 +272,14 @@
    Hide resume button on small screens
 ============================================== */
 @media (max-width: 900px) {
-  /* Hide desktop resume button */
-  .resume-btn {
-    display: none;
-  }
+  
 
   /* Show mobile menu resume button */
   .mobile-resume-btn {
     display: block;
+    padding: 12px 24px;
+  width: 160px;
+  text-align: center;
   }
 }
 

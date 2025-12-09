@@ -361,3 +361,199 @@
     height: 280px;
   }
 }
+/* ================================
+   RESPONSIVE FIXED & CLEAN
+================================ */
+@media (max-width: 900px) {
+  .bio-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .bio-left,
+  .bio-right {
+    flex: 1 1 100%;
+  }
+
+  .bio-right {
+    padding: 22px 18px;
+    margin-bottom: 20px;
+  }
+
+  .bio-details {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .edu-card {
+    width: 85%;
+  }
+
+  .edu-row:nth-child(odd) .edu-card,
+  .edu-row:nth-child(even) .edu-card {
+    margin: 0 auto;
+  }
+
+  .edu-line {
+    left: 10px; /* keeps timeline aligned */
+  }
+
+  .edu-icon-box {
+    left: 10px; /* icon follows the line */
+    transform: translateX(0);
+  }
+}
+
+/* ============= MOBILE (600px) ============= */
+@media (max-width: 600px) {
+  .about-section {
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-header h2 {
+    font-size: 1.7rem;
+  }
+
+  /* Photo */
+  .glass-photo {
+    width: 220px;
+    height: 260px;
+  }
+
+  .years-badge {
+    padding: 8px 12px;
+  }
+
+  .years-badge h3 {
+    font-size: 1.3rem;
+  }
+
+  /* Bio */
+  .bio-right h3 {
+    font-size: 1.4rem;
+  }
+
+  .bio-right p {
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Skills Grid – MAKE FULLY RESPONSIVE */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 14px 16px;
+  }
+
+  .skill-meta h4 {
+    font-size: 1rem;
+  }
+
+  /* Timeline FIX for phones */
+  .edu-line {
+    left: 6px;
+    width: 3px;
+  }
+
+  .edu-icon-box {
+    width: 22px;
+    height: 22px;
+    font-size: 0.8rem;
+    left: 6px;
+  }
+
+  .edu-card {
+    width: 92%;
+    margin-left: 30px !important; /* shifts card away from line */
+    padding: 14px;
+  }
+
+  .edu-course {
+    font-size: 1rem;
+  }
+}
+
+/* ============= EXTRA SMALL (400px) ============= */
+@media (max-width: 400px) {
+  .about-section {
+    padding-top: 70px;
+  }
+
+  .glass-photo {
+    width: 180px;
+    height: 220px;
+  }
+
+  .bio-details {
+    font-size: 0.85rem;
+  }
+
+  .skill-card {
+    padding: 12px 14px;
+  }
+
+  .edu-card {
+    margin-left: 25px !important;
+    width: 94%;
+  }
+
+  .edu-course {
+    font-size: 0.95rem;
+  }
+}
+/* Prevent About heading from touching navbar */
+#about, 
+.about-section,
+.about-container {
+  padding-top: 120px; /* Default for mobile */
+}
+
+/* For very small screens (below 400px) */
+@media (max-width: 400px) {
+  #about, 
+  .about-section,
+  .about-container {
+    padding-top: 140px;
+  }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 600px) {
+  #about, 
+  .about-section,
+  .about-container {
+    padding-top: 100px;
+  }
+}
+
+/* For large screens */
+@media (min-width: 1024px) {
+  #about, 
+  .about-section,
+  .about-container {
+    padding-top: 80px;
+  }
+}
+/* Applies safe spacing for all screens */
+#about,
+.about-section,
+.about-container {
+  padding-top: calc(80px + 2rem); /* navbar height + extra spacing */
+}
+#about {
+  scroll-margin-top: 120px;
+}
+#about h2 {
+  margin-top: 20px !important;
+}
+

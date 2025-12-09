@@ -12,7 +12,6 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FaEnvelope } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,12 +28,10 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo */}
-        {/* Left: Logo */}
-<div className="logo-container">
-  <div className="logo-circle">J</div>
-  <h1 className="logo-text">Janani</h1>
-</div>
-
+        <div className="logo-container">
+          <div className="logo-circle">J</div>
+          <h1 className="logo-text">Janani</h1>
+        </div>
 
         {/* Center Links */}
         <ul className="nav-links">
@@ -48,7 +45,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Resume Button (replaces social icons) */}
+        {/* Resume Button */}
         <div className="social-icons">
           <a
             href="/JananiK Resume.pdf"
@@ -83,6 +80,8 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+
+          {/* MOBILE RESUME BUTTON */}
           <div className="mobile-socials">
             <a
               href="/JananiK Resume.pdf"
