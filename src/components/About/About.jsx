@@ -206,7 +206,7 @@ export default function About() {
             <div><strong>Freelance:</strong> Available</div>
           </div>
 
-          <a className="download-btn" href="/JananiK Resume.pdf" download>
+          <a className="download-btn" href="/JANANI K Resume.pdf" download>
             <i className="fa-solid fa-download"></i> Download CV
           </a>
         </div>

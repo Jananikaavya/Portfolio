@@ -13,9 +13,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-export default function Navbar() {
+export default function Navbar({ onResumeClick }) {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   const navItems = [
     { name: "Home", path: "/", icon: faHome },
     { name: "About", path: "/about", icon: faUser },
@@ -47,15 +47,14 @@ export default function Navbar() {
 
         {/* Resume Button */}
         <div className="social-icons">
-          <a
-            href="/JananiK Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn resume-btn"
-          >
-            Resume
-          </a>
-        </div>
+  <button
+    className="btn resume-btn"
+    onClick={onResumeClick}
+  >
+    Resume
+  </button>
+</div>
+
 
         {/* Mobile Toggle */}
         <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
@@ -83,15 +82,17 @@ export default function Navbar() {
 
           {/* MOBILE RESUME BUTTON */}
           <div className="mobile-socials">
-            <a
-              href="/JananiK Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn resume-btn"
-            >
-              Resume
-            </a>
-          </div>
+  <button
+    className="btn resume-btn"
+    onClick={() => {
+      onResumeClick();
+      setIsOpen(false);
+    }}
+  >
+    Resume
+  </button>
+</div>
+
         </div>
       )}
     </nav>
